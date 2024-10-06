@@ -2,7 +2,7 @@ FROM nvidia/cuda:12.4.1-cudnn-devel-ubuntu22.04
 
 RUN apt-get -y update && apt-get -y install
 
-RUN apt-get -y install git ffmpeg libcudnn8 libcudnn8-dev
+RUN apt-get -y install git ffmpeg libcudnn8 libcudnn8-dev python3-pip
 
 RUN mkdir -p /app/results
 
