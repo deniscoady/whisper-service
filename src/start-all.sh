@@ -1,4 +1,4 @@
 #!/bin/bash
 
-python /app/overview.py &
-python /app/server.py
+python3 /app/overview.py &
+python3 /app/server.py
