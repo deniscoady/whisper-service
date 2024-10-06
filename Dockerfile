@@ -4,10 +4,13 @@ RUN apt-get -y update && apt-get -y install
 
 RUN apt-get -y install git ffmpeg libcudnn8 libcudnn8-dev python3-pip
 
-RUN mkdir -p /app/results
+RUN pip3 install torch torchaudio torchvision
 
+
+
+
+RUN  mkdir -p /app/results
 COPY src/* /app/
-
 RUN pip3 install -r /app/requirements.txt
 
 EXPOSE 8000
